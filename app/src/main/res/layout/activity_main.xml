@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jeso.cetis1084av_app002.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:hint="Numero 1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et2"
+        android:hint="Numero 2"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/et1"
+        android:layout_alignLeft="@+id/et1"
+        android:layout_alignStart="@+id/et1" />
+
+    <Button
+        android:text="Restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnrestar"
+        android:layout_below="@+id/et2"
+        android:layout_alignLeft="@+id/et2"
+        android:layout_alignStart="@+id/et2"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:text="Multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnmultiplicar"
+        android:layout_alignBaseline="@+id/btnrestar"
+        android:layout_alignBottom="@+id/btnrestar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+
+    <Button
+        android:text="Dividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndividir"
+        android:layout_alignBaseline="@+id/btnsumar"
+        android:layout_alignBottom="@+id/btnsumar"
+        android:layout_alignLeft="@+id/btnmultiplicar"
+        android:layout_alignStart="@+id/btnmultiplicar" />
+
+    <Button
+        android:text="Sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsumar"
+        android:layout_below="@+id/btnmultiplicar"
+        android:layout_alignLeft="@+id/btnrestar"
+        android:layout_alignStart="@+id/btnrestar"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtResultado"
+
+        android:layout_below="@+id/btndividir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
